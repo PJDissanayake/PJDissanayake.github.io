@@ -9,6 +9,8 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  # ADD THIS LINE
+  deployments: write
 
 jobs:
   build-and-deploy:
@@ -40,7 +42,7 @@ jobs:
       - name: Build static site
         env:
           GITHUB_PAGES: true
-        run: pnpm run export   # ← now just runs `next build`
+        run: pnpm run export
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
@@ -48,3 +50,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
           force_orphan: true
+          # ADD THIS LINE TO FIX 403
+          enable_push: true
