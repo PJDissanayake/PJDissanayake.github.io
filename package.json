@@ -6,9 +6,9 @@
     "dev": "next dev",
     "lint": "eslint .",
     "start": "next start",
-
     "export": "GITHUB_PAGES=true next build && next export",
-    "deploy": "gh-pages -d out -t true"
+    "deploy": "gh-pages -d out -t true",
+    "ci": "pnpm install --frozen-lockfile"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
