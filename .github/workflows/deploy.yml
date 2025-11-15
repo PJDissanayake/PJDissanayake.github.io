@@ -14,7 +14,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Install pnpm
@@ -28,21 +28,21 @@ jobs:
           node-version: '20'
           cache: 'pnpm'
 
-      - name: Install dependencies (auto-fix lockfile)
+      - name: Install dependencies
         run: |
           if pnpm install --frozen-lockfile; then
-            echo "Using existing pnpm-lock.yaml"
+            echo "Lockfile valid"
           else
-            echo "pnpm-lock.yaml outdated or missing — regenerating..."
+            echo "Regenerating lockfile..."
             pnpm install --no-frozen-lockfile
           fi
 
-      - name: Export static site
+      - name: Build static site
         env:
           GITHUB_PAGES: true
-        run: pnpm run export
+        run: pnpm run export   # ← now just runs `next build`
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

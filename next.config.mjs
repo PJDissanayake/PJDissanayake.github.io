@@ -5,9 +5,9 @@ const nextConfig = {
   typescript: { ignoreBuildErrors: true },
   images: { unoptimized: true },
 
-  // ---- GITHUB PAGES ----
-  output: 'export',                     // static export
-  trailingSlash: true,                  // /about → /about/
+  // REQUIRED FOR STATIC EXPORT
+  output: 'export',
+  trailingSlash: true,
   basePath: isGithubPages ? '/PJDissanayake.github.io' : '',
   assetPrefix: isGithubPages ? '/PJDissanayake.github.io/' : '',
 };
