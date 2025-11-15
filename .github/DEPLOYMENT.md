@@ -76,4 +76,3 @@ If your project uses environment variables, add them in:
 
 - [Vercel Deployment Documentation](https://vercel.com/docs/deployments/overview)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
-
