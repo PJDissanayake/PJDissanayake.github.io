@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Linkedin, Github, CheckCircle, Copy } from 'lucide-react'
+import { Mail, Linkedin, Github, CheckCircle, Copy, Youtube } from 'lucide-react'
 import { Card } from './ui/card'
 import { Button } from './ui/button'
 import { Input } from './ui/input'
@@ -111,6 +111,33 @@ export default function Contact() {
                     aria-label="GitHub"
                   >
                     <Github className="w-5 h-5" />
+                  </a>
+                </Button>
+                <Button variant="outline" size="icon" asChild className="hover:border-primary">
+                  <a
+                    href="https://youtube.com/@alexrivera"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube"
+                  >
+                    <Youtube className="w-5 h-5" />
+                  </a>
+                </Button>
+                <Button variant="outline" size="icon" asChild className="hover:border-primary">
+                  <a
+                    href="https://freelancer.com/u/alexrivera"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Freelancer"
+                  >
+                    <svg
+                      className="w-5 h-5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M14.096 3.076l1.634 2.292L24 3.076M5.503 20.924l4.474-4.374-2.692-2.89m6.133-10.584L11.027 5.23l4.022.15M4.124 3.077l.857 1.76 4.734.294m-3.058 7.072l3.497-6.522L0 5.13" />
+                    </svg>
                   </a>
                 </Button>
               </div>
