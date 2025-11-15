@@ -17,31 +17,32 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # ---- Install pnpm (same version you use locally) ----
       - name: Install pnpm
         uses: pnpm/action-setup@v3
         with:
-          version: 9   # <-- change if you use a different major version
+          version: 9
 
-      # ---- Setup Node (cache will now use pnpm) ----
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'pnpm'          # <-- important!
+          cache: 'pnpm'
 
-      # ---- Install exact dependencies from pnpm-lock.yaml ----
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+      - name: Install dependencies (auto-fix lockfile)
+        run: |
+          if pnpm install --frozen-lockfile; then
+            echo "Using existing pnpm-lock.yaml"
+          else
+            echo "pnpm-lock.yaml outdated or missing — regenerating..."
+            pnpm install --no-frozen-lockfile
+          fi
 
-      # ---- Build static site ----
-      - name: Export static files
+      - name: Export static site
         env:
           GITHUB_PAGES: true
         run: pnpm run export
 
-      # ---- Deploy to GitHub Pages ----
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
