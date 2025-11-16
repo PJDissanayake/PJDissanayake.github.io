@@ -27,25 +27,25 @@ jobs:
           node-version: '20'
           cache: 'pnpm'
 
-      # --- INSTALL PNPM GLOBALLY VIA NPM (BYPASS COREPACK) ---
+      # --- INSTALL PNPM GLOBALLY (RELIABLE METHOD) ---
       - name: Install pnpm
-        run: npm install -g pnpm@latest
+        run: npm install -g pnpm@9.12.2
 
-      # --- VERIFY PNPM IS INSTALLED ---
+      # --- VERIFY PNPM IS WORKING ---
       - name: Verify pnpm
         run: |
           pnpm --version
-          echo "pnpm installed successfully"
+          echo "pnpm $(pnpm --version) installed"
 
-      # --- INSTALL DEPENDENCIES ---
+      # --- INSTALL DEPENDENCIES USING PNPM-LOCK.YAML ---
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
-      # --- BUILD ---
+      # --- BUILD STATIC SITE (Next.js export → ./out) ---
       - name: Build Static Site
         run: pnpm run build
 
-      # --- UPLOAD ARTIFACT ---
+      # --- UPLOAD ./out TO GITHUB PAGES ---
       - name: Upload GitHub Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
