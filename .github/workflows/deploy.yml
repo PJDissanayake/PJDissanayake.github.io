@@ -18,26 +18,31 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
-          cache: "pnpm"
+          node-version: '20'
+          cache: 'pnpm'
 
-      - name: Enable Corepack & pnpm
-        run: corepack enable
+      - name: Enable pnpm via Corepack
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
+          echo "PNPM_VERSION=$(pnpm --version)" >> $GITHUB_ENV
+          echo "Using pnpm $(pnpm --version)"
 
-      - name: Install dependencies
-        run: corepack pnpm install --frozen-lockfile
-        # This uses pnpm via corepack — no PATH issues
+      - name: Install Dependencies
+        run: |
+          $HOME/.local/share/pnpm/pnpm install --frozen-lockfile
 
-      - name: Build with Next.js
-        run: corepack pnpm run build
+      - name: Build Static Site
+        run: |
+          $HOME/.local/share/pnpm/pnpm run build
 
-      - name: Upload artifact
+      - name: Upload GitHub Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
