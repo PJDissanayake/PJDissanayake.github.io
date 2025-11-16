@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  output: 'export',
+  trailingSlash: true,
   images: {
-    unoptimized: true,
+    unoptimized: true
   },
+  // No basePath needed for USERNAME.github.io repositories
+  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
 }
 
-export default nextConfig
+module.exports = nextConfig
