@@ -18,52 +18,30 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # -------------------------------------------------
-      # 1. Checkout the repository
-      # -------------------------------------------------
       - name: Checkout
         uses: actions/checkout@v4
 
-      # -------------------------------------------------
-      # 2. Set up Node 20 (the version you use locally)
-      # -------------------------------------------------
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "pnpm"          # <-- cache the pnpm store for faster runs
+          cache: "pnpm"
 
-      # -------------------------------------------------
-      # 3. Enable & prepare pnpm via Corepack
-      # -------------------------------------------------
-      - name: Install pnpm
-        run: |
-          corepack enable
-          corepack prepare pnpm@latest --activate
+      - name: Enable Corepack & pnpm
+        run: corepack enable
 
-      # -------------------------------------------------
-      # 4. Install exact dependencies (like npm ci)
-      # -------------------------------------------------
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: corepack pnpm install --frozen-lockfile
+        # This uses pnpm via corepack — no PATH issues
 
-      # -------------------------------------------------
-      # 5. Build the static site (Next.js export → ./out)
-      # -------------------------------------------------
       - name: Build with Next.js
-        run: pnpm run build
+        run: corepack pnpm run build
 
-      # -------------------------------------------------
-      # 6. Upload the static output as a Pages artifact
-      # -------------------------------------------------
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
 
-  # -------------------------------------------------
-  # Deploy job – runs only after a successful build
-  # -------------------------------------------------
   deploy:
     environment:
       name: github-pages
