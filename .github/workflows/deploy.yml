@@ -18,25 +18,52 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # -------------------------------------------------
+      # 1. Checkout the repository
+      # -------------------------------------------------
       - name: Checkout
         uses: actions/checkout@v4
-      
+
+      # -------------------------------------------------
+      # 2. Set up Node 20 (the version you use locally)
+      # -------------------------------------------------
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-      
+          cache: "pnpm"          # <-- cache the pnpm store for faster runs
+
+      # -------------------------------------------------
+      # 3. Enable & prepare pnpm via Corepack
+      # -------------------------------------------------
+      - name: Install pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
+
+      # -------------------------------------------------
+      # 4. Install exact dependencies (like npm ci)
+      # -------------------------------------------------
       - name: Install dependencies
-        run: npm ci
-      
+        run: pnpm install --frozen-lockfile
+
+      # -------------------------------------------------
+      # 5. Build the static site (Next.js export → ./out)
+      # -------------------------------------------------
       - name: Build with Next.js
-        run: npm run build
-      
+        run: pnpm run build
+
+      # -------------------------------------------------
+      # 6. Upload the static output as a Pages artifact
+      # -------------------------------------------------
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
 
+  # -------------------------------------------------
+  # Deploy job – runs only after a successful build
+  # -------------------------------------------------
   deploy:
     environment:
       name: github-pages
