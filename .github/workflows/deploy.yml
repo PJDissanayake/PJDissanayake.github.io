@@ -27,21 +27,25 @@ jobs:
           node-version: '20'
           cache: 'pnpm'
 
-      - name: Enable pnpm via Corepack
-        run: |
-          corepack enable
-          corepack prepare pnpm@latest --activate
-          echo "PNPM_VERSION=$(pnpm --version)" >> $GITHUB_ENV
-          echo "Using pnpm $(pnpm --version)"
+      # --- INSTALL PNPM GLOBALLY VIA NPM (BYPASS COREPACK) ---
+      - name: Install pnpm
+        run: npm install -g pnpm@latest
 
+      # --- VERIFY PNPM IS INSTALLED ---
+      - name: Verify pnpm
+        run: |
+          pnpm --version
+          echo "pnpm installed successfully"
+
+      # --- INSTALL DEPENDENCIES ---
       - name: Install Dependencies
-        run: |
-          $HOME/.local/share/pnpm/pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
+      # --- BUILD ---
       - name: Build Static Site
-        run: |
-          $HOME/.local/share/pnpm/pnpm run build
+        run: pnpm run build
 
+      # --- UPLOAD ARTIFACT ---
       - name: Upload GitHub Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
