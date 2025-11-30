@@ -195,13 +195,15 @@ body {
 
 /* Profile photo styles with glassmorphism and glow effect */
 .profile-photo-container {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   margin: 0 auto 2rem;
   position: relative;
+  /* Added floating animation back */
   animation: float 3s ease-in-out infinite;
 }
 
+/* Added floating keyframe animation */
 @keyframes float {
   0%,
   100% {
@@ -217,16 +219,18 @@ body {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid var(--accent-cyan);
-  box-shadow: 0 0 40px rgba(0, 212, 255, 0.4), 0 0 80px rgba(0, 149, 255, 0.2), inset 0 0 20px rgba(0, 212, 255, 0.1);
+  border: 5px solid var(--accent-cyan);
+  box-shadow: 0 0 50px rgba(0, 212, 255, 0.5), 0 0 100px rgba(0, 149, 255, 0.3), inset 0 0 30px rgba(0, 212, 255, 0.1);
   background: var(--bg-glass);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
+  position: relative;
+  z-index: 10;
 }
 
 .profile-photo:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 60px rgba(0, 212, 255, 0.6), 0 0 100px rgba(0, 149, 255, 0.3), inset 0 0 20px rgba(0, 212, 255, 0.2);
+  box-shadow: 0 0 70px rgba(0, 212, 255, 0.7), 0 0 120px rgba(0, 149, 255, 0.4), inset 0 0 30px rgba(0, 212, 255, 0.2);
 }
 
 .hero-tag {
@@ -478,8 +482,40 @@ body {
 
 /* About Section */
 .about-content {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
+}
+
+/* Added grid layout for about section with photo */
+.about-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-image-container {
+  position: relative;
+  animation: float 3s ease-in-out infinite;
+}
+
+.about-photo {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid var(--accent-cyan);
+  box-shadow: 0 0 40px rgba(0, 212, 255, 0.4), 0 0 80px rgba(0, 149, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.about-photo:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 60px rgba(0, 212, 255, 0.6), 0 0 100px rgba(0, 149, 255, 0.3);
+}
+
+.about-text-content {
+  flex: 1;
 }
 
 .about-text {
@@ -966,6 +1002,21 @@ body {
   .certifications-grid {
     grid-template-columns: 1fr;
   }
+
+  /* Stack about section vertically on mobile */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-image-container {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .about-photo {
+    height: 250px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -992,7 +1043,8 @@ body {
 
   /* Adjust profile photo size for mobile */
   .profile-photo-container {
-    width: 140px;
-    height: 140px;
+    /* Adjusted mobile size to be more prominent */
+    width: 160px;
+    height: 160px;
   }
 }
