@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathum Dissanayake | Embedded Systems Engineer</title>
+    <meta name="description" content="Final-year Electrical & Electronic Engineering student specializing in embedded systems, EV fast-charging, and bare-metal C++ development.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">PD</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#tutorials" class="nav-link">Tutorials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#tutorials" class="mobile-link">Tutorials</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content" data-aos="fade-up">
+            <div class="hero-tag">Available for opportunities</div>
+            <h1 class="hero-name">PATHUM DISSANAYAKE</h1>
+            <h2 class="hero-title">Final-year Electrical & Electronic Engineering Undergraduate</h2>
+            <p class="hero-subtitle">Associate Electronics Engineer @ <span class="highlight">Vega Innovations</span></p>
+            <p class="hero-tagline">"Building the future of EV fast-charging infrastructure with bare-metal C++, embedded Linux, and XCP"</p>
+            
+            <div class="hero-buttons">
+                <a href="Pathum_Dissanayake.pdf" class="btn btn-primary" download>
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download Resume
+                </a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+
+            <div class="social-links">
+                <a href="mailto:dkpjdissanayaka@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/pathum-dissanayake" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="https://github.com/pathum-dissanayake" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+                <a href="https://youtube.com/@pathum-embedded" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+                <div class="glass-card">
+                    <p class="about-text">
+                        Final-year BSc (Hons) <span class="highlight">Electrical & Electronic Engineering</span> student at South Eastern University of Sri Lanka. Currently working as a part-time <span class="highlight">Associate Electronics Engineer</span> at Vega Innovations.
+                    </p>
+                    <p class="about-text">
+                        Expert in <span class="highlight">embedded systems</span>, C/C++, embedded Linux, and <span class="highlight">EV fast-charging systems</span>. Passionate about bare-metal programming, real-time systems, and building robust firmware for next-generation electric vehicle infrastructure.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+            <div class="skills-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-card" data-aos="flip-left" data-aos-delay="150">
+                    <div class="skill-icon">{ }</div>
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="skill-icon">⚡</div>
+                    <h3>Embedded Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">STM32 Bare-metal</span>
+                        <span class="skill-tag">Raspberry Pi</span>
+                        <span class="skill-tag">Embedded Linux</span>
+                        <span class="skill-tag">Buildroot</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-aos="flip-left" data-aos-delay="250">
+                    <div class="skill-icon">📡</div>
+                    <h3>Protocols</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">XCP Protocol</span>
+                        <span class="skill-tag">CAN</span>
+                        <span class="skill-tag">SPI</span>
+                        <span class="skill-tag">I2C</span>
+                        <span class="skill-tag">Ethernet</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="skill-icon">🔧</div>
+                    <h3>Hardware</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PCB Design</span>
+                        <span class="skill-tag">Altium</span>
+                        <span class="skill-tag">Eagle</span>
+                        <span class="skill-tag">Soldering</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-aos="flip-left" data-aos-delay="350">
+                    <div class="skill-icon">🐧</div>
+                    <h3>Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Linux Kernel</span>
+                        <span class="skill-tag">Device Drivers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Experience</h2>
+            <div class="timeline" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="150">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-date">June 2025 – Present</div>
+                        <h3 class="timeline-title">Associate Electronics Engineer</h3>
+                        <h4 class="timeline-company">Vega Innovations</h4>
+                        <p class="timeline-description">
+                            Leading firmware development for EV fast-charging systems. Implementing XCP protocol for real-time calibration and diagnostics. Developing bare-metal C++ applications for STM32 microcontrollers.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-date">Dec 2024 – Mar 2025</div>
+                        <h3 class="timeline-title">Electronic Engineering Intern</h3>
+                        <h4 class="timeline-company">Vega Innovations</h4>
+                        <p class="timeline-description">
+                            Worked on embedded Linux systems for EV charging infrastructure. Contributed to PCB design and hardware testing. Developed Python tools for automated testing and validation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="250">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-date">Oct 2023 – Jun 2024</div>
+                        <h3 class="timeline-title">Electronic Engineering Intern</h3>
+                        <h4 class="timeline-company">Vega Innovations</h4>
+                        <p class="timeline-description">
+                            Assisted in firmware development and hardware troubleshooting. Learned embedded systems design principles and real-time operating systems. Contributed to documentation and testing procedures.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            
+            <div class="project-filters" data-aos="fade-up" data-aos-delay="50">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="embedded">Embedded</button>
+                <button class="filter-btn" data-filter="ev-charging">EV Charging</button>
+                <button class="filter-btn" data-filter="tools">Tools</button>
+            </div>
+
+            <div class="projects-grid" data-aos="fade-up" data-aos-delay="100">
+                <!-- Project 1 -->
+                <div class="project-card glass-card" data-category="embedded ev-charging" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="project-header">
+                        <h3 class="project-title">XCP Protocol Implementation</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/pathum-dissanayake/xcp-stm32" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Full-featured XCP slave implementation on STM32 from scratch. Supports calibration, measurement, and diagnostics over CAN and Ethernet. Used in production EV chargers.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">C++</span>
+                        <span class="project-tag">STM32</span>
+                        <span class="project-tag">XCP</span>
+                        <span class="project-tag">CAN</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card" data-category="embedded" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-header">
+                        <h3 class="project-title">Bare-Metal RTOS</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/pathum-dissanayake/baremetal-rtos" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Lightweight preemptive RTOS for Cortex-M microcontrollers. Implements task scheduling, semaphores, mutexes, and message queues without any external dependencies.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">C</span>
+                        <span class="project-tag">ARM Cortex-M</span>
+                        <span class="project-tag">RTOS</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card" data-category="ev-charging embedded" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="project-header">
+                        <h3 class="project-title">EV Charging Control Unit</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/pathum-dissanayake/ev-ccu" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Main control firmware for DC fast charger. Handles power management, safety interlocks, communication protocols (OCPP), and real-time monitoring. Supports up to 350kW charging.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">C++</span>
+                        <span class="project-tag">STM32</span>
+                        <span class="project-tag">CAN</span>
+                        <span class="project-tag">Modbus</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-card" data-category="embedded" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="project-header">
+                        <h3 class="project-title">EEPROM Wear Leveling Library</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/pathum-dissanayake/eeprom-wear-level" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Production-ready wear leveling algorithm for internal and external EEPROM. Extends EEPROM lifetime by 100x with minimal overhead. Header-only C++ library.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">C++</span>
+                        <span class="project-tag">I2C</span>
+                        <span class="project-tag">SPI</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card glass-card" data-category="embedded tools" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-header">
+                        <h3 class="project-title">Buildroot Custom Board BSP</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/pathum-dissanayake/buildroot-custom-bsp" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Complete Buildroot BSP for custom EV charging hardware. Includes kernel patches, device tree, bootloader config, and rootfs customization. Sub-10s boot time.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Linux</span>
+                        <span class="project-tag">Buildroot</span>
+                        <span class="project-tag">Device Tree</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card glass-card" data-category="tools" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="project-header">
+                        <h3 class="project-title">CAN Bus Analyzer</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/pathum-dissanayake/can-analyzer" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Python-based CAN bus monitoring and analysis tool. Real-time visualization, DBC file support, message filtering, and signal plotting. Essential debugging tool for EV systems.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">CAN</span>
+                        <span class="project-tag">Qt</span>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card glass-card" data-category="embedded" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="project-header">
+                        <h3 class="project-title">STM32 Bootloader</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/pathum-dissanayake/stm32-bootloader" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Secure bootloader for field firmware updates. Supports CAN, UART, and Ethernet. Includes encryption, CRC verification, and rollback protection.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">C</span>
+                        <span class="project-tag">STM32</span>
+                        <span class="project-tag">Bootloader</span>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-card glass-card" data-category="embedded" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-header">
+                        <h3 class="project-title">Custom Device Driver</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/pathum-dissanayake/custom-driver" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Linux kernel module for custom SPI sensor interface. Implements character device with ioctl interface for userspace communication.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">C</span>
+                        <span class="project-tag">Linux Kernel</span>
+                        <span class="project-tag">SPI</span>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="project-card glass-card" data-category="tools" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="project-header">
+                        <h3 class="project-title">Embedded Test Framework</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/pathum-dissanayake/embedded-test" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Lightweight unit testing framework for embedded C/C++. Works on target hardware without dynamic allocation. Minimal flash/RAM footprint.
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">C++</span>
+                        <span class="project-tag">Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorials/YouTube Section -->
+    <section class="section" id="tutorials">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Tutorials & YouTube</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="50">Sharing knowledge through video tutorials and technical content</p>
+            
+            <div class="tutorials-grid" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://youtube.com/@pathum-embedded" target="_blank" rel="noopener" class="tutorial-card glass-card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="tutorial-thumbnail">
+                        <img src="/placeholder.svg?height=200&width=350" alt="XCP Protocol Tutorial">
+                        <div class="tutorial-play">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="tutorial-title">Build Your Own XCP Slave on STM32</h3>
+                    <p class="tutorial-meta">5-part series • Embedded Systems</p>
+                </a>
+
+                <a href="https://youtube.com/@pathum-embedded" target="_blank" rel="noopener" class="tutorial-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="tutorial-thumbnail">
+                        <img src="/placeholder.svg?height=200&width=350" alt="EEPROM Tutorial">
+                        <div class="tutorial-play">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="tutorial-title">EEPROM Wear Leveling</h3>
+                    <p class="tutorial-meta">Never Burn Your EEPROM Again</p>
+                </a>
+
+                <a href="https://youtube.com/@pathum-embedded" target="_blank" rel="noopener" class="tutorial-card glass-card" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="tutorial-thumbnail">
+                        <img src="/placeholder.svg?height=200&width=350" alt="Embedded Linux Tutorial">
+                        <div class="tutorial-play">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="tutorial-title">Embedded Linux for EV Applications</h3>
+                    <p class="tutorial-meta">Complete Guide • Buildroot</p>
+                </a>
+
+                <a href="https://youtube.com/@pathum-embedded" target="_blank" rel="noopener" class="tutorial-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="tutorial-thumbnail">
+                        <img src="/placeholder.svg?height=200&width=350" alt="Bare-Metal Programming Tutorial">
+                        <div class="tutorial-play">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="tutorial-title">Bare-Metal STM32 Programming</h3>
+                    <p class="tutorial-meta">From Scratch • No HAL</p>
+                </a>
+            </div>
+
+            <div class="youtube-cta" data-aos="fade-up" data-aos-delay="350">
+                <a href="https://youtube.com/@pathum-embedded" target="_blank" rel="noopener" class="btn btn-primary">
+                    <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                    </svg>
+                    Visit YouTube Channel
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section section-alt" id="certifications">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Certifications</h2>
+            <div class="certifications-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="cert-card glass-card" data-aos="flip-up" data-aos-delay="150">
+                    <div class="cert-icon">🎓</div>
+                    <h3 class="cert-title">Fundamentals of Digital System Design</h3>
+                    <p class="cert-issuer">ENTC – University of Moratuwa</p>
+                </div>
+
+                <div class="cert-card glass-card" data-aos="flip-up" data-aos-delay="200">
+                    <div class="cert-icon">🐧</div>
+                    <h3 class="cert-title">Beginner's Guide to Linux Kernel Development</h3>
+                    <p class="cert-issuer">Linux Foundation</p>
+                </div>
+
+                <div class="cert-card glass-card" data-aos="flip-up" data-aos-delay="250">
+                    <div class="cert-icon">⚡</div>
+                    <h3 class="cert-title">Electronic Design Automation</h3>
+                    <p class="cert-issuer">Professional Certification</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="50">Let's build something amazing together</p>
+            
+            <div class="contact-content" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-info">
+                    <div class="contact-item glass-card" data-aos="fade-right" data-aos-delay="150">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:dkpjdissanayaka@gmail.com">dkpjdissanayaka@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item glass-card" data-aos="fade-right" data-aos-delay="200">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <a href="tel:+94715870607">+94 71 587 0607</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item glass-card" data-aos="fade-right" data-aos-delay="250">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Sri Lanka</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form glass-card" data-aos="fade-left" data-aos-delay="150">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="6" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 Pathum Dissanayake – Built with ❤️ and too much coffee</p>
+            <div class="footer-links">
+                <a href="mailto:dkpjdissanayaka@gmail.com">Email</a>
+                <a href="https://linkedin.com/in/pathum-dissanayake" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/pathum-dissanayake" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://youtube.com/@pathum-embedded" target="_blank" rel="noopener">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
