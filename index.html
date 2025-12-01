@@ -53,13 +53,11 @@
     <section class="hero" id="hero">
         <div id="particles-js"></div>
         <div class="hero-content" data-aos="fade-up">
-            <!-- Removed profile photo container from hero section -->
-            
             <div class="hero-tag">Available for opportunities</div>
             <h1 class="hero-name">PATHUM DISSANAYAKE</h1>
             <h2 class="hero-title">Final-year Electrical & Electronic Engineering Undergraduate</h2>
             <p class="hero-subtitle">Associate Electronics Engineer @ <span class="highlight">Vega Innovations</span></p>
-            <p class="hero-tagline">"Building the future of EV fast-charging infrastructure with bare-metal C++, embedded Linux, and XCP"</p>
+            <p class="hero-tagline">"Specializes in building optimized embedded systems that support next-generation Automotive Electronics and Charging Infrastructure"</p>
             
             <div class="hero-buttons">
                 <a href="Pathum_Dissanayake.pdf" class="btn btn-primary" download>
@@ -111,7 +109,6 @@
     <section class="section" id="about">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">About Me</h2>
-            <!-- Added two-column layout with profile photo on left and text on right -->
             <div class="about-content" data-aos="fade-up" data-aos-delay="100">
                 <div class="about-grid">
                     <div class="about-image-container">
@@ -206,7 +203,7 @@
                         <h3 class="timeline-title">Associate Electronics Engineer</h3>
                         <h4 class="timeline-company">Vega Innovations</h4>
                         <p class="timeline-description">
-                            Leading firmware development for EV fast-charging systems. Implementing XCP protocol for real-time calibration and diagnostics. Developing bare-metal C++ applications for STM32 microcontrollers.
+                            Leading firmware development for EV fast-charging systems. Implementing XCP protocol for real-time calibration and diagnostics. Developing C++ applications for microprocessors.
                         </p>
                     </div>
                 </div>
@@ -230,7 +227,7 @@
                         <h3 class="timeline-title">Electronic Engineering Intern</h3>
                         <h4 class="timeline-company">Vega Innovations</h4>
                         <p class="timeline-description">
-                            Assisted in firmware development and hardware troubleshooting. Learned embedded systems design principles and real-time operating systems. Contributed to documentation and testing procedures.
+                            Assisted in firmware development and hardware troubleshooting. Learned embedded systems design principles and real-time operating systems. Developed bare-metal C applications for STM32 microcontrollers.
                         </p>
                     </div>
                 </div>
@@ -246,17 +243,17 @@
             <div class="project-filters" data-aos="fade-up" data-aos-delay="50">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="embedded">Embedded</button>
-                <button class="filter-btn" data-filter="ev-charging">EV Charging</button>
+                <button class="filter-btn" data-filter="FPGA">FPGA</button>
                 <button class="filter-btn" data-filter="tools">Tools</button>
             </div>
 
             <div class="projects-grid" data-aos="fade-up" data-aos-delay="100">
                 <!-- Project 1 -->
-                <div class="project-card glass-card" data-category="embedded ev-charging" data-aos="zoom-in" data-aos-delay="150">
+                <div class="project-card glass-card" data-category="embedded" data-aos="zoom-in" data-aos-delay="150">
                     <div class="project-header">
-                        <h3 class="project-title">XCP Protocol Implementation</h3>
+                        <h3 class="project-title">XCP-min Embedded Memory Access Library</h3>
                         <div class="project-links">
-                            <a href="https://github.com/pathum-dissanayake/xcp-stm32" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                            <a href="https://github.com/PJDissanayake/XCP_min" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                                 </svg>
@@ -264,22 +261,22 @@
                         </div>
                     </div>
                     <p class="project-description">
-                        Full-featured XCP slave implementation on STM32 from scratch. Supports calibration, measurement, and diagnostics over CAN and Ethernet. Used in production EV chargers.
+                        Lightweight implementation of the XCP (Universal Measurement and Calibration Protocol) for embedded systems, specifically designed for STM32 microcontrollers. It supports basic memory access operations over SPI.
                     </p>
                     <div class="project-tags">
-                        <span class="project-tag">C++</span>
+                        <span class="project-tag">C</span>
                         <span class="project-tag">STM32</span>
                         <span class="project-tag">XCP</span>
-                        <span class="project-tag">CAN</span>
+                        <span class="project-tag">SPI</span>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
                 <div class="project-card glass-card" data-category="embedded" data-aos="zoom-in" data-aos-delay="200">
                     <div class="project-header">
-                        <h3 class="project-title">Bare-Metal RTOS</h3>
+                        <h3 class="project-title">EEPROM Wear Leveling Library</h3>
                         <div class="project-links">
-                            <a href="https://github.com/pathum-dissanayake/baremetal-rtos" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                            <a href="https://github.com/PJDissanayake/EEPROM_Wear_Leveling" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                                 </svg>
@@ -287,21 +284,21 @@
                         </div>
                     </div>
                     <p class="project-description">
-                        Lightweight preemptive RTOS for Cortex-M microcontrollers. Implements task scheduling, semaphores, mutexes, and message queues without any external dependencies.
+                        Wear leveling functionality for EEPROM, specifically designed for the M95M02 EEPROMs. Wear leveling helps to extend the lifespan of EEPROM by distributing write and erase cycles more evenly across memory.
                     </p>
                     <div class="project-tags">
                         <span class="project-tag">C</span>
-                        <span class="project-tag">ARM Cortex-M</span>
-                        <span class="project-tag">RTOS</span>
+                        <span class="project-tag">EEPROM</span>
+                        <span class="project-tag">SPI</span>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
                 <div class="project-card glass-card" data-category="ev-charging embedded" data-aos="zoom-in" data-aos-delay="250">
                     <div class="project-header">
-                        <h3 class="project-title">EV Charging Control Unit</h3>
+                        <h3 class="project-title">Multifrequency-LIFI-Telecommunication-System</h3>
                         <div class="project-links">
-                            <a href="https://github.com/pathum-dissanayake/ev-ccu" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                            <a href="https://github.com/PJDissanayake/Multifrequency-LIFI-Telecommunication-System" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                                 </svg>
@@ -309,22 +306,22 @@
                         </div>
                     </div>
                     <p class="project-description">
-                        Main control firmware for DC fast charger. Handles power management, safety interlocks, communication protocols (OCPP), and real-time monitoring. Supports up to 350kW charging.
+                        The primary objective was increase the data rate and ensure the highest level of data security. To achieve this, the project incorporates a special encoding and decoding method specifically designed to enhance data privacy and prevent unauthorized access.
                     </p>
                     <div class="project-tags">
                         <span class="project-tag">C++</span>
-                        <span class="project-tag">STM32</span>
-                        <span class="project-tag">CAN</span>
-                        <span class="project-tag">Modbus</span>
+                        <span class="project-tag">Raspberry Pi</span>
+                        <span class="project-tag">I2C</span>
+                        <span class="project-tag">Arduino</span>
                     </div>
                 </div>
 
                 <!-- Project 4 -->
-                <div class="project-card glass-card" data-category="embedded" data-aos="zoom-in" data-aos-delay="150">
+                <div class="project-card glass-card" data-category="embedded tools" data-aos="zoom-in" data-aos-delay="150">
                     <div class="project-header">
-                        <h3 class="project-title">EEPROM Wear Leveling Library</h3>
+                        <h3 class="project-title">Automated-Range-Finder-Car</h3>
                         <div class="project-links">
-                            <a href="https://github.com/pathum-dissanayake/eeprom-wear-level" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                            <a href="https://github.com/PJDissanayake/EEPROM_Wear_Leveling" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                                 </svg>
@@ -332,7 +329,7 @@
                         </div>
                     </div>
                     <p class="project-description">
-                        Production-ready wear leveling algorithm for internal and external EEPROM. Extends EEPROM lifetime by 100x with minimal overhead. Header-only C++ library.
+                        Robot car capable of calculating the altitude of a specific room or building to a significant exten. Includes an automated scale measuring feature, further streamlining the measurement process. Furthermore, it can be controlled remotely by a single person, providing convenience and flexibility.
                     </p>
                     <div class="project-tags">
                         <span class="project-tag">C++</span>
@@ -342,11 +339,11 @@
                 </div>
 
                 <!-- Project 5 -->
-                <div class="project-card glass-card" data-category="embedded tools" data-aos="zoom-in" data-aos-delay="200">
+                <div class="project-card glass-card" data-category="verilog FPGA" data-aos="zoom-in" data-aos-delay="200">
                     <div class="project-header">
-                        <h3 class="project-title">Buildroot Custom Board BSP</h3>
+                        <h3 class="project-title">Debouncing Push Buttons</h3>
                         <div class="project-links">
-                            <a href="https://github.com/pathum-dissanayake/buildroot-custom-bsp" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                            <a href="https://github.com/PJDissanayake/Debouncing_push_buttons" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                                 </svg>
@@ -354,19 +351,19 @@
                         </div>
                     </div>
                     <p class="project-description">
-                        Complete Buildroot BSP for custom EV charging hardware. Includes kernel patches, device tree, bootloader config, and rootfs customization. Sub-10s boot time.
+                        Verilog design for a push-button circuit that effectively eliminates the bouncing effect. Solution generates clean step signals on both button press and release, ensuring reliable signal generation in the presence of noise..
                     </p>
                     <div class="project-tags">
-                        <span class="project-tag">Linux</span>
-                        <span class="project-tag">Buildroot</span>
-                        <span class="project-tag">Device Tree</span>
+                        <span class="project-tag">Verilog</span>
+                        <span class="project-tag">FPGA</span>
+                        <span class="project-tag">Electronics</span>
                     </div>
                 </div>
 
                 <!-- Project 6 -->
-                <div class="project-card glass-card" data-category="tools" data-aos="zoom-in" data-aos-delay="250">
+                <div class="project-card glass-card" data-category="FPGA verilog" data-aos="zoom-in" data-aos-delay="250">
                     <div class="project-header">
-                        <h3 class="project-title">CAN Bus Analyzer</h3>
+                        <h3 class="project-title">Simple 4 to 1 Multiplexer -Verilog</h3>
                         <div class="project-links">
                             <a href="https://github.com/pathum-dissanayake/can-analyzer" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -376,77 +373,12 @@
                         </div>
                     </div>
                     <p class="project-description">
-                        Python-based CAN bus monitoring and analysis tool. Real-time visualization, DBC file support, message filtering, and signal plotting. Essential debugging tool for EV systems.
+                        A beginner-friendly Verilog implementation of a 4-to-1 multiplexer.
                     </p>
                     <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">CAN</span>
-                        <span class="project-tag">Qt</span>
-                    </div>
-                </div>
-
-                <!-- Project 7 -->
-                <div class="project-card glass-card" data-category="embedded" data-aos="zoom-in" data-aos-delay="150">
-                    <div class="project-header">
-                        <h3 class="project-title">STM32 Bootloader</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/pathum-dissanayake/stm32-bootloader" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Secure bootloader for field firmware updates. Supports CAN, UART, and Ethernet. Includes encryption, CRC verification, and rollback protection.
-                    </p>
-                    <div class="project-tags">
-                        <span class="project-tag">C</span>
-                        <span class="project-tag">STM32</span>
-                        <span class="project-tag">Bootloader</span>
-                    </div>
-                </div>
-
-                <!-- Project 8 -->
-                <div class="project-card glass-card" data-category="embedded" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="project-header">
-                        <h3 class="project-title">Custom Device Driver</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/pathum-dissanayake/custom-driver" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Linux kernel module for custom SPI sensor interface. Implements character device with ioctl interface for userspace communication.
-                    </p>
-                    <div class="project-tags">
-                        <span class="project-tag">C</span>
-                        <span class="project-tag">Linux Kernel</span>
-                        <span class="project-tag">SPI</span>
-                    </div>
-                </div>
-
-                <!-- Project 9 -->
-                <div class="project-card glass-card" data-category="tools" data-aos="zoom-in" data-aos-delay="250">
-                    <div class="project-header">
-                        <h3 class="project-title">Embedded Test Framework</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/pathum-dissanayake/embedded-test" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="project-description">
-                        Lightweight unit testing framework for embedded C/C++. Works on target hardware without dynamic allocation. Minimal flash/RAM footprint.
-                    </p>
-                    <div class="project-tags">
-                        <span class="project-tag">C++</span>
-                        <span class="project-tag">Testing</span>
+                        <span class="project-tag">Verilog</span>
+                        <span class="project-tag">FPGA</span>
+                        <span class="project-tag">Electronics</span>
                     </div>
                 </div>
             </div>
@@ -460,17 +392,17 @@
             <p class="section-subtitle" data-aos="fade-up" data-aos-delay="50">Sharing knowledge through video tutorials and technical content</p>
             
             <div class="tutorials-grid" data-aos="fade-up" data-aos-delay="100">
-                <a href="https://youtube.com/@pathum-embedded" target="_blank" rel="noopener" class="tutorial-card glass-card" data-aos="zoom-in" data-aos-delay="150">
+                <a href="https://youtu.be/brKJn_MMjGk?si=nRxMVlZymA_jvImb" target="_blank" rel="noopener" class="tutorial-card glass-card" data-aos="zoom-in" data-aos-delay="150">
                     <div class="tutorial-thumbnail">
-                        <img src="/placeholder.svg?height=200&width=350" alt="XCP Protocol Tutorial">
+                        <img src="https://img.youtube.com/vi/brKJn_MMjGk/maxresdefault.jpg" alt="How to Interface OLED Display with STM32">
                         <div class="tutorial-play">
                             <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M8 5v14l11-7z"/>
                             </svg>
                         </div>
                     </div>
-                    <h3 class="tutorial-title">Build Your Own XCP Slave on STM32</h3>
-                    <p class="tutorial-meta">5-part series • Embedded Systems</p>
+                    <h3 class="tutorial-title">How to Interface OLED Display with STM32</h3>
+                    <p class="tutorial-meta">•STM32f103c8 MCU •SSD1306 OLED Display</p>
                 </a>
 
                 <a href="https://youtube.com/@pathum-embedded" target="_blank" rel="noopener" class="tutorial-card glass-card" data-aos="zoom-in" data-aos-delay="200">
