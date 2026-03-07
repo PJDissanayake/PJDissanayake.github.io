@@ -2,6 +2,7 @@
 
 import { Mail, Linkedin, Github, Youtube, Download } from "lucide-react"
 import Link from "next/link"
+import { ParticlesBackground } from "@/components/particles-background"
 
 const socialLinks = [
   { href: "mailto:dkpjdissanayaka@gmail.com", icon: Mail, label: "Email" },
@@ -16,6 +17,9 @@ export function HeroSection() {
       id="hero"
       className="relative min-h-screen flex items-center justify-center px-4 sm:px-8 overflow-hidden"
     >
+      {/* Particles background */}
+      <ParticlesBackground />
+      
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
       
