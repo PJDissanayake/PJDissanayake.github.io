@@ -37,7 +37,7 @@ export function HeroSection() {
         </h1>
 
         <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-foreground mb-2">
-          Final-year Electrical & Electronic Engineering Undergraduate
+          BSc (Hons) in Electrical & Electronic Engineering Graduate
         </h2>
 
         <p className="text-base sm:text-lg text-muted-foreground mb-4">

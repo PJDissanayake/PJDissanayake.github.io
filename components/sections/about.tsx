@@ -22,29 +22,27 @@ export function AboutSection() {
 
           <div className="glass-card p-8">
             <p className="text-lg leading-relaxed mb-6">
-              Final-year BSc (Hons){" "}
               <span className="text-primary font-semibold">
                 Electrical & Electronic Engineering
               </span>{" "}
-              student at South Eastern University of Sri Lanka. Currently
-              working as a part-time{" "}
+              graduate from South Eastern University of Sri Lanka, currently
+              working as an{" "}
               <span className="text-primary font-semibold">
                 Associate Electronics Engineer
               </span>{" "}
-              at Vega Innovations.
+              at VEGA Innovations.
             </p>
             <p className="text-lg leading-relaxed text-muted-foreground">
-              Expert in{" "}
+              Strong expertise in{" "}
               <span className="text-primary font-semibold">
                 embedded systems
               </span>
-              , C/C++, embedded Linux, and{" "}
+              , C/C++, Embedded Linux, and{" "}
               <span className="text-primary font-semibold">
-                EV fast-charging systems
+                automotive communication protocols
               </span>
-              . Passionate about bare-metal programming, real-time systems, and
-              building robust firmware for next-generation electric vehicle
-              infrastructure.
+              , with hands-on experience in EV fast-charging infrastructure,
+              charger middleware development, and low-level system software.
             </p>
           </div>
         </div>

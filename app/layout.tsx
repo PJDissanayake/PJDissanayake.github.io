@@ -9,7 +9,7 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jet
 
 export const metadata: Metadata = {
   title: 'Pathum Dissanayake | Embedded Systems Engineer',
-  description: 'Final-year Electrical & Electronic Engineering student specializing in embedded systems, EV fast-charging, and bare-metal C++ development.',
+  description: 'Electrical & Electronic Engineering graduate specializing in embedded systems, EV fast-charging, and bare-metal C++ development.',
   generator: 'v0.app',
   icons: {
     icon: [
