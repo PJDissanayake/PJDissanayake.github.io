@@ -28,7 +28,7 @@ export function AboutSection() {
               graduate from South Eastern University of Sri Lanka, currently
               working as an{" "}
               <span className="text-primary font-semibold">
-                Associate Electronics Engineer
+               Electronics Engineer
               </span>{" "}
               at VEGA Innovations.
             </p>

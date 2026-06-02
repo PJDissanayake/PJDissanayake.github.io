@@ -41,7 +41,7 @@ export function HeroSection() {
         </h2>
 
         <p className="text-base sm:text-lg text-muted-foreground mb-4">
-          Associate Electronics Engineer @{" "}
+         Electronic Engineer @{" "}
           <span className="text-primary font-semibold">Vega Innovations</span>
         </p>
 
